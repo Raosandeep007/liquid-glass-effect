@@ -27,16 +27,16 @@
     "ios",
     "css-effects"
   ],
-  "author": "Your Name",
+  "author": "Raosandeep007",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/liquid-glass-effect.git"
+    "url": "https://github.com/Raosandeep007/liquid-glass-effect.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/liquid-glass-effect/issues"
+    "url": "https://github.com/Raosandeep007/liquid-glass-effect/issues"
   },
-  "homepage": "https://github.com/yourusername/liquid-glass-effect#readme",
+  "homepage": "https://github.com/Raosandeep007/liquid-glass-effect#readme",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.9.0",
