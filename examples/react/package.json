@@ -1,0 +1,31 @@
+{
+  "name": "liquid-glass-effect-react-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React examples for liquid-glass-effect package",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "liquid-glass-effect": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "notes": {
+    "description": "These examples can be integrated into any React project",
+    "frameworks": [
+      "Create React App",
+      "Vite",
+      "Next.js",
+      "Remix"
+    ],
+    "usage": "Copy the components you need into your project"
+  }
+}

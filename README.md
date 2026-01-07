@@ -101,6 +101,41 @@ const glass = new LiquidGlass(element, {
 });
 ```
 
+### React
+
+```jsx
+import React, { useEffect, useRef } from 'react';
+import LiquidGlass from 'liquid-glass-effect';
+
+function GlassCard() {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const glass = new LiquidGlass(cardRef.current, {
+      frostBlur: '8px',
+      tintColor: 'rgba(255, 255, 255, 0.2)',
+      borderRadius: '16px'
+    });
+
+    return () => glass.destroy(); // Cleanup
+  }, []);
+
+  return (
+    <div ref={cardRef} style={{ padding: '30px', color: 'white' }}>
+      <h2>Glass Card</h2>
+      <p>Beautiful glass morphism effect!</p>
+    </div>
+  );
+}
+```
+
+**💡 For React users**: Check out the comprehensive [React examples](examples/react/README.md) including:
+- Custom hooks (`useLiquidGlass`)
+- TypeScript examples
+- Interactive components
+- Draggable modals
+- Best practices
+
 ## API Reference
 
 ### Constructor
