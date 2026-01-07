@@ -1,0 +1,41 @@
+/* Liquid Glass Effect Styles */
+
+.liquid-glass {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius, 20px);
+  box-shadow: 0 0 var(--outer-shadow-blur, 24px) var(--outer-shadow-color, rgba(0, 0, 0, 0.2));
+}
+
+/* Inner glow layer with tint */
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset var(--shadow-offset, 0px) var(--shadow-offset, 0px)
+              var(--shadow-blur, 20px) var(--shadow-spread, -5px)
+              var(--shadow-color, rgba(255, 255, 255, 0.8));
+  background: var(--tint-color, rgba(255, 255, 255, 0.4));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Frosted glass layer with distortion */
+.liquid-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  backdrop-filter: blur(var(--frost-blur, 2px));
+  -webkit-backdrop-filter: blur(var(--frost-blur, 2px));
+  filter: var(--glass-filter-url);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content is above glass layers */
+.liquid-glass > * {
+  position: relative;
+  z-index: 2;
+}

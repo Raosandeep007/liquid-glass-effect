@@ -1,0 +1,32 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.js text
+*.css text
+*.html text
+*.json text
+*.md text
+
+# Documentation
+*.markdown text
+*.txt text
+LICENSE text
+
+# Templates
+*.tmpl text
+*.tpl text
+
+# Archives
+*.7z binary
+*.gz binary
+*.tar binary
+*.zip binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text

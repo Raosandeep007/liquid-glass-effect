@@ -1,0 +1,37 @@
+# Source files (we only publish dist/)
+src/
+examples/
+
+# Development files
+.github/
+.vscode/
+.idea/
+
+# Config files
+rollup.config.js
+.eslintrc
+.prettierrc
+
+# Git
+.git/
+.gitignore
+
+# Docs
+docs/
+
+# Tests
+test/
+*.test.js
+*.spec.js
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
